@@ -35,6 +35,5 @@ function renderGallery(imagesCollections) {
 
 if (galleryContainer) {
   const galleryItems = renderGallery(images);
-  console.log(galleryItems);
-  galleryContainer.insertAdjacentHTML("afterbegin", galleryItems);
+  galleryContainer.insertAdjacentHTML("beforeend", galleryItems);
 }

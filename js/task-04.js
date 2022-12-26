@@ -14,7 +14,6 @@
 */
 let counterValue = 0;
 const span = document.getElementById('value');
-console.log(span);
 
 const decrementButton = document.querySelector('button[data-action="decrement"]');
 const incrementButton = document.querySelector('button[data-action="increment"]');
@@ -37,4 +36,3 @@ function onIncrementButtonClick() {
   span.textContent = counterValue;
 }
 
-console.log(decrementButton);
