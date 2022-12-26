@@ -26,7 +26,7 @@ const ingredientsContainer = document.getElementById("ingredients");
     })
   };
  
-if (ingredientsContainerEl) {
+if (ingredientsContainer) {
 const IngredientsList = makeIngredientsList(ingredients);
 ingredientsContainer.append(...IngredientsList);
 }
