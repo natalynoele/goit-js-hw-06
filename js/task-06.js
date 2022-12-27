@@ -28,14 +28,13 @@
 
 const validationInput = document.getElementById("validation-input");
 const dataLength = Number(validationInput.dataset.length);
-console.log(dataLength);
+
 if (validationInput) {
   validationInput.addEventListener("blur", onValidationInputBlur);
 }
 
 function onValidationInputBlur(event) {
   let inputLength = event.currentTarget.value.length;
-console.log(inputLength);
 console.log(Number(event.currentTarget.dataset.length));
   if (inputLength === dataLength){    
     event.currentTarget.classList.remove("invalid");
