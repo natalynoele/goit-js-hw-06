@@ -27,14 +27,22 @@
 */
 
 const validationInput = document.getElementById("validation-input");
-
+const dataLength = Number(validationInput.dataset.length);
+console.log(dataLength);
 if (validationInput) {
   validationInput.addEventListener("blur", onValidationInputBlur);
 }
 
 function onValidationInputBlur(event) {
   let inputLength = event.currentTarget.value.length;
-  inputLength !== Number(event.currentTarget.dataset.length)
-    ? event.currentTarget.classList.add("invalid")
-    : event.currentTarget.classList.add("valid");
+console.log(inputLength);
+console.log(Number(event.currentTarget.dataset.length));
+  if (inputLength === dataLength){    
+    event.currentTarget.classList.remove("invalid");
+    event.currentTarget.classList.add("valid");
+  }else{
+    event.currentTarget.classList.remove("valid");
+    event.currentTarget.classList.add("invalid");
+  }
+    
 }

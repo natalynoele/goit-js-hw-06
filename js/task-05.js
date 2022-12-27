@@ -14,5 +14,6 @@ if (nameInput) {
 }
 
 function onNameInputInput(event) {
-  output.textContent = event.currentTarget.value;
+  event.currentTarget.value !== '' ? output.textContent = event.currentTarget.value : output.textContent = 'Anonymous';
+  
 }
