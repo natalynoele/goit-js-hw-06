@@ -35,7 +35,7 @@ if (validationInput) {
 
 function onValidationInputBlur(event) {
   let inputLength = event.currentTarget.value.length;
-console.log(Number(event.currentTarget.dataset.length));
+
   if (inputLength === dataLength){    
     event.currentTarget.classList.remove("invalid");
     event.currentTarget.classList.add("valid");
